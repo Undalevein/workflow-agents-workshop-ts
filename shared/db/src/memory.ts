@@ -1,16 +1,16 @@
 /**
  * In-memory backend for @workshop/db.
  *
- * Selected automatically when DATABASE_URL is unset, so Pattern 1 and Pattern 3
- * run keyless *and* database-less locally — fork, `npm run dev`, review a PR.
+ * Selected automatically when DATABASE_URL is unset
+ * run keyless *and* database-less locally
  * Render provisions real Postgres on deploy, and the named exports in index.ts
- * transparently switch to the pg backend.
+ * switches to the pg backend automatically.
  *
- * Note: this is per-process state. Pattern 2 runs the web and worker as separate
- * processes, so it requires real Postgres (shared state) — local and deployed.
+ * Note: this is per-process state. worker-agents runs the web and worker as separate
+ * processes, so it requires real Postgres (shared state)
  */
 import type { SpanInfo, SpanOutcome, Tracer } from '@workshop/agent'
-import type { FindingRow, ReviewResultUpdate, ReviewRow, SpanRow } from './types.js'
+import type { FindingRow, ReviewResultUpdate, ReviewRow, SpanRow } from './types'
 
 const reviews = new Map<string, ReviewRow>()
 const findings: FindingRow[] = []
