@@ -1,4 +1,4 @@
-# Render Agents Workshop
+# Render Workflow Agents Workshop
 
 A hands-on workshop that builds **one agentic code-review use case** and runs it on
 **three Render execution substrates**: in-process, worker + queue, and Render
