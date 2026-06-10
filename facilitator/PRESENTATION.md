@@ -1,8 +1,7 @@
 # From Demo to Deploy — Building Agents with Render Workflows
 
 Bulleted slides for the localhost:2026 workshop. Speaker notes are under each
-slide. Timings are in the section headers. Total: ~90 min (two sessions with a
-break).
+slide. Timings are in the section headers. 
 
 ---
 
@@ -290,7 +289,7 @@ The only infrastructure you wrote was a function and a config object. Everything
 
 ---
 
-## Slide 19 — The takeaway
+## Slide 18 — The takeaway
 
 - Pattern 1: simple, but fragile
 - Pattern 2: powerful, but you own the hard parts
@@ -299,7 +298,7 @@ The only infrastructure you wrote was a function and a config object. Everything
 
 ---
 
-## Slide 20 — Resources
+## Slide 19 — Resources
 
 - **This repo:** all three patterns, the mock model, the full test suite
 - **Docs:** `docs/00` through `docs/05` — the guided walkthrough
